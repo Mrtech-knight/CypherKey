@@ -1,0 +1,184 @@
+@import "/css/reset.css";
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(39, 46, 39);
+  color: antiquewhite;
+}
+
+select:focus{
+  outline: none;
+}
+
+option{
+  margin: 80px 0px;
+  /* background-color: brown; */
+  border-bottom: 15px solid black;
+  font-size: 18px;
+}
+
+
+header {
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 24px;
+}
+
+.inText {
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  /* margin-right: 25px; */
+  padding: 50px;
+  background-color: brown;
+  border-radius: 10px;
+  resize: none;
+  
+}
+.cySelector {
+  border: 2px solid green;
+  background-color: aquamarine;
+  border-radius: 50px;
+  padding: 50px;
+  /* margin-left: 100px;
+  margin-right: 100px; */
+  display: flex;
+  flex-direction: column;
+}
+.selector{
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+.keySelector{
+  border: 2px solid green;
+  background-color: rgb(7, 51, 36);
+  border-radius: 48px;
+  padding: 5px;
+  /* margin-top: 20px; */
+  /*margin-left: 100px; */
+  /* margin-right: 1px; */
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keySelector input{
+  width: 70%;
+}
+textarea{
+  margin-top: 20px;
+  background-color: rgb(226, 113, 113);
+  margin-bottom: 20px;
+  
+}
+
+#key{
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 8px;
+  color: black;
+  background-color: white;
+}
+
+#key:focus{
+  outline: none;
+}
+
+textarea:focus{
+  outline: none;
+
+}
+.btn{
+  background-color: red;
+  color: whitesmoke;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+.btn:hover, #algo:hover{
+  cursor: pointer;
+}
+
+
+.outText {
+  border: 2px solid red;
+  /* margin-left: 115px; */
+  padding: 50px;
+  background-color: brown;
+  border-radius: 10px;
+
+}
+
+#outWindow {
+  height: 20px;
+  
+}
+/* .arrow {
+  border: solid rgb(254, 128, 128);
+  border-width: 0 30px 30px 0;
+  display: inline-block;
+  padding: 30px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+} */
+.arrow-4 {
+  width:40px;
+  height:30px;
+  display:grid;
+}
+.arrow-4:before,
+.arrow-4:after {
+  content: "";
+  grid-area: 1/1;
+  background: currentColor;
+  clip-path: polygon(0 10px,calc(100% - 15px) 10px,calc(100% - 15px) 0,100% 50%,calc(100% - 15px) 100%,calc(100% - 15px) calc(100% - 10px),0 calc(100% - 10px));
+  animation: a4 .5s infinite alternate;
+}
+
+.arrow-4:after {
+  --s:-1;
+}
+@keyframes a4 {
+  0%  {transform: scale(var(--s,1)) translate(12px,-6px) translate(4px)}
+  100%{transform: scale(var(--s,1)) translate(12px,-6px) translate(-4px)}
+}
+
+.arrow-inputs{
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+
+.key-selectors{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: palegreen;
+  }
+}
+

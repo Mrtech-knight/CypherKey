@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href= "./css/reset.css">
+    <link rel="stylesheet"  href= "/css/widescreen.css">
+    <script src="./daddy.js"></script>
+    <title>CyGen</title>
+  </head>
+  <body>
+    <header>
+        <p>Welcome To CyGen</p>
+    </header>
+     <div class="hero">
+
+      <div class="arrow-inputs">
+        <div class="inText">
+         Normal Text
+         <br>
+          <!-- <input placeholder="Message" type="text" id= "inputText" /> -->
+          <textarea name="Message" id="inputText" cols="20" rows="10" style="height: 30px; width: auto; resize: none;"></textarea>
+        </div>
+      
+        <!-- <div class="right arrow"></div> -->
+        <div class="arrow-4"></div>
+
+      </div>
+
+      <div >
+
+        <div class="selector key-selectors">
+          <div class="cySelector">
+          <button onclick="encryptButtonCall()" class="btn">Encrypt</button>
+  
+          <select name="algo" id="algo">
+            <option value="none">SELECT ALGO</option>
+            <option value="vigenere">VIGNERE CYPHER</option>
+            <option value="hill">HILL CYPHER</option>
+            <!-- <option value="algo4">algo4</option>
+            <option value="algo5">algo5</option> -->
+          </select>
+          
+          
+          <button onclick="decryptButtonCall()" class="btn">Decrypt</button>
+        </div>
+        <div class="keySelector">
+          Key 
+          <input placeholder="key" type="text " id = "key">
+        </div>
+        </div>
+        <!-- <div class="right arrow"></div> -->
+      </div>
+      <div class="arrow-inputs">
+
+        <div class="arrow-4"></div>
+  
+        <div class="outText">
+          Cypher Text
+          <br>
+          <textarea name="Decrypt" id="outWindow" cols="20" rows="10" style="height: 30px; width: auto; resize:none "></textarea>
+          <!-- <input placeholder="Message" type="text" id= "outWindow"/> -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
