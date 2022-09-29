@@ -34,6 +34,8 @@ function vigenereDecrypt(cypher, key){
         res += (table[temp])
     }
     return res;
+
+    // Changes made new.
 }
 
 
