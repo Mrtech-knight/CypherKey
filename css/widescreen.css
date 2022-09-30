@@ -3,13 +3,14 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: rgb(39, 46, 39);
-  color: antiquewhite;
+  background-color: rgb(234, 245, 234);
+  color: black;
 }
 
 select:focus{
   outline: none;
 }
+
 
 option{
   margin: 80px 0px;
@@ -23,23 +24,46 @@ header {
   font-size: 75px;
   display: flex;
   justify-content: center;
+  position: relative;
+  background-color: rgb(125, 125, 80);
+  /* border: 2px solid purple; */
 }
+
+img{
+
+  height: 50px;
+  width: auto;
+}
+
+.color-mode{
+  display: flex;
+  position: absolute;
+  top: 8px;
+  padding: 20px;
+  right: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  /* border: 2px solid palevioletred; */
+}
+
 .hero {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   font-size: 24px;
+  margin-top: 50px;
 }
 
 .inText {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   align-items:flex-start;
   /* margin-right: 25px; */
   padding: 50px;
-  background-color: brown;
+  background-color: rgb(162, 103, 47);
   border-radius: 10px;
   resize: none;
   
@@ -61,7 +85,7 @@ header {
 }
 .keySelector{
   border: 2px solid green;
-  background-color: rgb(7, 51, 36);
+  background-color: rgb(100, 213, 113);
   border-radius: 48px;
   padding: 5px;
   /* margin-top: 20px; */
@@ -71,6 +95,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  position: absolute;
 }
 
 .keySelector input{
@@ -78,7 +104,7 @@ header {
 }
 textarea{
   margin-top: 20px;
-  background-color: rgb(226, 113, 113);
+  background-color: rgb(234, 229, 229);
   margin-bottom: 20px;
   
 }
@@ -115,10 +141,10 @@ textarea:focus{
 
 
 .outText {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   /* margin-left: 115px; */
   padding: 50px;
-  background-color: brown;
+  background-color: rgb(162, 103, 47);
   border-radius: 10px;
 
 }
@@ -182,3 +208,13 @@ textarea:focus{
   }
 }
 
+.center-key{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+}

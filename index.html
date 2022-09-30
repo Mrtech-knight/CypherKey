@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
-    <link rel="stylesheet" href= "./css/reset.css">
     <link rel="stylesheet"  href= "/css/widescreen.css">
+    <link rel="stylesheet" href= "./css/reset.css">
     <script src="./daddy.js"></script>
     <title>CyGen</title>
   </head>
   <body>
     <header>
         <p>Welcome To CyGen</p>
+        <div class="color-mode">
+          <img src="/owl-light.png" alt="owl-light">
+
+        </div>
     </header>
      <div class="hero">
 
@@ -46,17 +50,13 @@
           
           <button onclick="decryptButtonCall()" class="btn">Decrypt</button>
         </div>
-        <div class="keySelector">
-          Key 
-          <input placeholder="key" type="text " id = "key">
-        </div>
-        </div>
-        <!-- <div class="right arrow"></div> -->
       </div>
-      <div class="arrow-inputs">
-
+      <!-- <div class="right arrow"></div> -->
+    </div>
+    <div class="arrow-inputs">
+      
         <div class="arrow-4"></div>
-  
+        
         <div class="outText">
           Cypher Text
           <br>
@@ -64,6 +64,13 @@
           <!-- <input placeholder="Message" type="text" id= "outWindow"/> -->
         </div>
       </div>
+    </div>
+    <div class="center-key">
+      <div class="keySelector">
+        Key 
+        <input placeholder="key" type="text " id = "key">
+      </div>
+      
     </div>
   </body>
 </html>
